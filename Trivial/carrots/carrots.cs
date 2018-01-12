@@ -10,13 +10,13 @@ namespace Kattis.Trivial.carrots
 {
 	class carrots
 	{
-		static void Main(string[] args)
-		{
-			Scanner scan = new Scanner();
+		//static void Main(string[] args)
+		//{
+		//	Scanner scan = new Scanner();
 
-			scan.NextInt();
+		//	scan.NextInt();
 
-			Console.Write(scan.NextInt());
-		}
+		//	Console.Write(scan.NextInt());
+		//}
 	}
 }
