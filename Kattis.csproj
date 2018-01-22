@@ -11,6 +11,7 @@
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -35,6 +36,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Easy\zanzibar\zanzibar.cs" />
+    <Compile Include="Hard\sellingspatulas\brutespatula.cs" />
+    <Compile Include="Hard\sellingspatulas\spatulas2.cs" />
+    <Compile Include="Hard\sellingspatulas\spatulas.cs" />
+    <Compile Include="Hard\sellingspatulas\Spatulas3.cs" />
+    <Compile Include="Hard\sellingspatulas\spatula_generation.cs" />
     <Compile Include="Tools\Kattio.cs" />
     <Compile Include="Trivial\carrots\carrots.cs" />
   </ItemGroup>

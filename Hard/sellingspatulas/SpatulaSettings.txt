@@ -1,0 +1,10 @@
+Time limit exceeded:
+
+rangeGrowth = 10
+sizeOfTopList = 5
+
+
+Wrong answer ~3s execution:
+
+rangeGrowth = totalMinutesInSet / 10
+sizeOfTopList = 3
