@@ -22,14 +22,7 @@ namespace Kattis.Hard.sellingspatulas
 		public int minute;
 		public float amount;
 	};
-
-	//struct Peak
-	//{
-	//	public float profit;
-	//	public int from;
-	//	public int to;
-	//};
-
+	
 
 	//Spatulas 3:
 	//heavily based on Kristoffers C++ code
@@ -42,12 +35,6 @@ namespace Kattis.Hard.sellingspatulas
 
 	class Spatulas3
 	{
-		public static float Trunc(float value, int digits)
-		{
-			double mult = Math.Pow(10.0, digits);
-			double result = Math.Truncate(mult * value) / mult;
-			return (float)result;
-		}
 
 		static void Main(string [] args)
 		{
@@ -145,9 +132,10 @@ namespace Kattis.Hard.sellingspatulas
 					// = (bank value from store opening) - bank value from start of peak
 					float value = minute.bankValue - peakOffset;
 
-					value = (float)Math.Round(value, 2);
+					float cmp1 = (float)Math.Round(value, 2);
+					float cmp2 = (float)Math.Round(bestValue, 2);
 
-					if ( value > bestValue || (value >= bestValue && currentDist < bestDist))
+					if (cmp1 > cmp2 || (cmp1 >= cmp2 && currentDist < bestDist))
 					{
 						bestMinute = peakStart;
 						bestDist = currentDist;
